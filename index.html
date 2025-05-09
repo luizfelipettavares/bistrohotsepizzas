@@ -1,11 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <a href="cardapio.pdf" target="_blank" style="display: inline-block; padding: 1rem 2rem; background-color: #d62828; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">
-  📄 Acesse o Cardápio
-  </a>
+  <meta charset="UTF-8">
+  <title>Bistrô Hotse Pizzas - Bem-vindo</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #fff8f0;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    h1 {
+      font-size: 2.5rem;
+      color: #d62828;
+      margin-bottom: 2rem;
+    }
+    a.button {
+      display: inline-block;
+      padding: 1rem 2rem;
+      background-color: #d62828;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      font-size: 1.2rem;
+      transition: background-color 0.3s ease;
+    }
+    a.button:hover {
+      background-color: #a61d1d;
+    }
+  </style>
 </head>
 <body>
-  <p>Se não for redirecionado automaticamente, <a href="cardapio.pdf">clique aqui para acessar o cardápio</a>.</p>
+  <h1>Bem-vindo ao Bistrô Hotse Pizzas</h1>
+  <a href="/cardapio/cardapio.pdf" class="button" target="_blank">📄 Acesse o Cardápio</a>
 </body>
 </html>
