@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Bistrô Hotse Pizzas - Bem-vindo</title>
+  <title>Bistrô Hots e Pizzas - Bem-vindo</title>
   <style>
     body {
       margin: 0;
@@ -25,7 +25,9 @@
     }
     .button-container {
       display: flex;
+      flex-wrap: wrap;
       gap: 1rem;
+      justify-content: center;
     }
     .button {
       display: inline-block;
@@ -49,22 +51,34 @@
       font-size: 0.9rem;
       color: #555;
     }
+    .location {
+      margin-top: 2rem;
+      text-align: center;
+    }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Bem-vindo ao Bistrô Hots e Pizzas</h1>
+    <h1>Bem-vindo ao Bistrô Hotse Pizzas</h1>
     <p>As melhores pizzas, hambúrgueres e pratos em um só lugar!</p>
   </header>
 
   <div class="button-container">
     <a href="/cardapio/" class="button">📄 Acesse o Cardápio</a>
     <a href="https://wa.me/5599984372130" class="button" target="_blank">📱 Faça seu Pedido</a>
+    <a href="https://www.ifood.com.br/delivery/timon-ma/bistro-hots-e-pizzas-parque-piaui-i/ee7c774f-7515-4e34-b443-f9067d8445e8" class="button" target="_blank">🍕 Peça no iFood</a>
+    <a href="https://pedido.anota.ai/loja/bistro-hots-e-pizzas?f=msa" class="button" target="_blank">📦 Peça no AnotaAI</a>
+  </div>
+
+  <div class="location">
+    <h2>📍 Localização</h2>
+    <p>Avenida Jaime Rios, 547, Parque Piaui I, Timon, MA. CEP: 65.631-210.</p>
+    <a href="https://maps.app.goo.gl/Kwo9Jo35vbnc35fb9" class="button" target="_blank">🗺️ Ver no Mapa</a>
   </div>
 
   <div class="footer">
-    &copy; 2025 Bistrô Hotse Pizzas - Todos os direitos reservados.
+    &copy; 2025 Bistrô Hots e Pizzas - Todos os direitos reservados.
   </div>
 
 </body>
