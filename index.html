@@ -2,94 +2,105 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Bistrô Hots e Pizzas - Bem-vindo</title>
+  <title>Bistrô Hots e Pizzas - A Melhor Pizza da Cidade</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    body {
+    body, html {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
       background-color: #FFFFFF;
       color: #2F3270;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
     }
-    header {
+    .header {
       background-color: #2F3270;
-      width: 100%;
-      padding: 1rem;
-      text-align: center;
-    }
-    header h1 {
-      font-size: 2.5rem;
+      padding: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       color: #FFFFFF;
-      margin: 0;
+    }
+    .header .logo {
+      font-size: 1.8rem;
+      font-weight: 600;
+    }
+    .header nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: #FFFFFF;
+      font-weight: 500;
     }
     .hero {
-      width: 100%;
       background-color: #CA5B1D;
-      padding: 2rem;
-      text-align: center;
       color: #FFFFFF;
+      padding: 4rem 2rem;
+      text-align: center;
     }
-    .hero h2 {
-      font-size: 2rem;
+    .hero h1 {
+      font-size: 3rem;
       margin-bottom: 1rem;
     }
-    .button-container {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      align-items: center;
-      margin: 2rem 0;
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
     }
-    .button {
-      display: inline-block;
+    .hero .cta-button {
       padding: 1rem 2rem;
-      background-color: #CA5B1D;
+      background-color: #2F3270;
       color: #FFFFFF;
       text-decoration: none;
+      font-weight: 600;
       border-radius: 5px;
-      font-weight: bold;
-      font-size: 1.2rem;
-      width: 100%;
-      max-width: 300px;
-      text-align: center;
-      transition: background-color 0.3s ease;
     }
-    .button:hover {
-      background-color: #A64314;
+    .section {
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    .section .title {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #CA5B1D;
     }
     .footer {
       background-color: #2F3270;
-      width: 100%;
-      padding: 1rem;
-      text-align: center;
       color: #FFFFFF;
-      position: absolute;
-      bottom: 0;
+      padding: 1.5rem;
+      text-align: center;
+      margin-top: 3rem;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Bistrô Hots e Pizzas</h1>
-  </header>
-
-  <div class="hero">
-    <h2>🔥 A receita da felicidade está aqui!</h2>
-    <p>Confira nosso cardápio e peça agora mesmo!</p>
+  <div class="header">
+    <div class="logo">Bistrô Hots e Pizzas</div>
+    <nav>
+      <a href="#">Início</a>
+      <a href="#cardapio">Cardápio</a>
+      <a href="#delivery">Delivery</a>
+      <a href="#contato">Contato</a>
+    </nav>
   </div>
 
-  <div class="button-container">
-    <a href="/cardapio/" class="button">📄 Acesse o Cardápio</a>
-    <a href="https://pedido.anota.ai/loja/bistro-hots-e-pizzas?f=msa" class="button" target="_blank">📦 Delivery - Site para pedidos</a>
-    <a href="https://www.ifood.com.br/delivery/timon-ma/bistro-hots-e-pizzas-parque-piaui-i/ee7c774f-7515-4e34-b443-f9067d8445e8" class="button" target="_blank">🍕 Delivery - iFood</a>
-    <a href="https://wa.me/5599984372130" class="button" target="_blank">📱 Dúvidas? Chama no Whats!</a>
-    <a href="https://maps.app.goo.gl/Kwo9Jo35vbnc35fb9" class="button" target="_blank">📍 Como chegar no Bistrô!</a>
-    <a href="https://www.instagram.com/bistro.hotsepizzas/" class="button" target="_blank">📸 Siga nosso Instagram</a>
+  <div class="hero">
+    <h1>A Melhor Pizza da Cidade</h1>
+    <p>Sabor, qualidade e tradição em cada fatia.</p>
+    <a href="#cardapio" class="cta-button">Peça Agora</a>
+  </div>
+
+  <div class="section" id="cardapio">
+    <h2 class="title">Nosso Cardápio</h2>
+    <p>Confira nossas pizzas, sanduíches e muito mais!</p>
+  </div>
+
+  <div class="section" id="delivery">
+    <h2 class="title">Delivery Rápido</h2>
+    <p>Peça pelo iFood, WhatsApp ou Anota AI e receba em casa.</p>
+  </div>
+
+  <div class="section" id="contato">
+    <h2 class="title">Fale Conosco</h2>
+    <p>Endereço, telefone e redes sociais.</p>
   </div>
 
   <div class="footer">
